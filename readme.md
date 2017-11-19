@@ -33,6 +33,7 @@ get('app').then(app => app.render(document.body));
 ### `mami(options: Object): Function`
 
 | `options.loadModule: Function` | Function that load modules. It should return `Promise` that should return loaded module content. |
+| --- | --- |
 | `options.modules: Object` | Keys of that object is a module name (any word). Values is a object or function that tell mami what dependencies is required. |
 
 Returns function that give you ability to get any described module.
